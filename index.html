@@ -1,111 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
 
-    <!-- REMIX -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-</head>
-<body>
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <img src="Images/logo-white.webp" alt="">
-            </div>
+		<!-- REMIX -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<div class="logo">
+					<img src="Images/logo-white.webp" alt="" />
+				</div>
 
-            <ul>
-                <li><i class="ri-moon-clear-line"></i></li>
-                <li><Button>Let's Talk</Button></li>
-                <li><i class="ri-menu-line"></i></li>
-            </ul>
-        </nav>
+				<ul>
+					<li><i class="ri-moon-clear-line"></i></li>
+					<li><button>Let's Talk</button></li>
+					<li><i class="ri-menu-line"></i></li>
+				</ul>
+			</nav>
 
-        <main>
-            <img src="./Images/photo_2025-04-19_18-16-38.jpg" alt="">
+			<main>
+				<img src="./Images/photo_2025-04-19_18-16-38.jpg" alt="" />
 
-            <div class="content">
-                <h1>Hello</h1>
-                <h1><span> I'm <sup>Bekhruz</sup></span></h1>
-                <h1><sup>Best</sup>Mobilograf </h1>
-            </div>
-        </main>
+				<div class="content" id="Home">
+					<h1>Hello</h1>
+					<h1>
+						<span> I'm <sup>Bekhruz</sup></span>
+					</h1>
+					<h1><sup>Best</sup>Mobilograf</h1>
+				</div>
+			</main>
 
-        <div class="full_menu">
-            <div class="Menu_container">
-                <div class="menuNav">
-                    <img src="Images/logo-white.webp" alt="">
-                </div>
+			<div class="full_menu">
+				<div class="Menu_container">
+					<div class="menuNav">
+						<img src="Images/logo-white.webp" alt="" />
+					</div>
 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="Menu_container">
-                <div class="Content">
-                   <p>+98994445522</p>
-                    <p>hello contact@Bekhruz.com</p>
-                    <p>If in doubt. reach out.</p>
-                </div>
+					<ul>
+						<li><a href="#Home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="Menu_container">
+					<div class="Content">
+						<p>+98994445522</p>
+						<p>hello contact@Bekhruz.com</p>
+						<p>If in doubt. reach out.</p>
+					</div>
 
-                <ul>
-                    <li><a href="#">Telegram</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">YouTube</a></li>
-                </ul>
+					<ul>
+						<li><a href="#">Telegram</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">YouTube</a></li>
+					</ul>
 
-            <i class="ri-close-line"></i>
+					<i class="ri-close-line"></i>
+				</div>
+			</div>
 
-            </div>
-        </div>
-    </div>
+			<!-- About -->
 
+			<section id="about">
+				<div class="about-container">
+					<div class="about-image">
+						<img src="./Images/Screenshot 2025-04-19 172323.png" alt="About Image" />
+					</div>
+					<div class="about-content">
+						<h2>Men haqimda</h2>
+						<p>
+							Salom! Men Nodira, SMM mutaxassisi va bloger sifatida raqamli olamda o‘z izimni qoldiryapman. Ijtimoiy
+							tarmoqlarda kreativ yondashuv, strategik kontent rejalashtirish va brend bilan auditoriya o‘rtasida
+							mustahkam aloqani yaratishga ixtisoslashganman.
+						</p>
+						<p>
+							Mening maqsadim — har bir loyiha orqali qiymat yaratish va mijozlarimga chin yurakdan xizmat
+							ko‘rsatishdir.
+						</p>
+						<button>Batafsil</button>
+					</div>
+				</div>
+			</section>
 
-    <script>
-        let Left_Menu_lis = document.querySelectorAll('.full_menu .Menu_container:nth-child(2) ul li');
-        let Right_Menu_lis = document.querySelectorAll('.full_menu .Menu_container:nth-child(1) ul li');
-        let Left_container = document.querySelector('.full_menu .Menu_container:nth-child(1)');
-        let Right_container = document.querySelector('.full_menu .Menu_container:nth-child(2)');
-        let Right_container_Content = document.querySelector('.full_menu .Menu_container:nth-child(2) .Content');
-        let MenuWrapper = document.querySelector('.full_menu');
+			<!-- Service -->
 
-        let bars =  document.querySelector('.ri-menu-line');
-        let Closebtn = document.querySelector('.ri-close-line');
-        let moon = document.querySelector('.ri-moon-clear-line');
-        bars.addEventListener('click',function() {
-            MenuWrapper.classList.add('activeWrapper');
-            Left_container.classList.add('LeftMenuOpen')
-            Right_container.classList.add('RightMenuOpen')
-            Right_Menu_lis.forEach(li=>{
-                li.classList.add('RightContentOpen')
-            })
-            Left_Menu_lis.forEach(li=>{
-                li.classList.add('LeftContentOpen')
-            })
-            Right_container_Content.classList.add('menuDescOpen')
-        });
-        Closebtn.addEventListener('click',function() {
-            MenuWrapper.classList.remove('activeWrapper');
-            Left_container.classList.remove('LeftMenuOpen')
-            Right_container.classList.remove('RightMenuOpen')
-            Right_Menu_lis.forEach(li=>{
-                li.classList.remove('RightContentOpen')
-            })
-            Left_Menu_lis.forEach(li=>{
-                li.classList.remove('LeftContentOpen')
-            })
-            Right_container_Content.classList.add('menuDescOpen')
-        });
-        moon.addEventListener('click',function(){
-            document.body.classList.toggle('activeTheme');
-        })
-    </script>
-</body>
+			<section id="services" class="services">
+				<h2 class="section-title">Xizmatlar</h2>
+				<p class="section-subtitle">Men taqdim etadigan mobilografiya xizmatlari</p>
+
+				<div class="services-container">
+					<div class="service-card">
+						<i class="ri-smartphone-line"></i>
+						<h3>Kontent suratga olish</h3>
+						<p>Brendingiz uchun sifatli va kreativ video hamda foto kontentlar tayyorlayman.</p>
+					</div>
+
+					<div class="service-card">
+						<i class="ri-scissors-cut-line"></i>
+						<h3>Video montaj</h3>
+						<p>Sizning istaklaringizga mos tarzda professional videolarni tahrirlayman.</p>
+					</div>
+
+					<div class="service-card">
+						<i class="ri-magic-line"></i>
+						<h3>Reels va Story tayyorlash</h3>
+						<p>Instagram uchun trendga mos, jalb qiluvchi reels va story videolar yarataman.</p>
+					</div>
+
+					<div class="service-card">
+						<i class="ri-calendar-event-line"></i>
+						<h3>Tadbirlarni yoritish</h3>
+						<p>Marosim, seminar va turli tadbirlaringizni videoga olish va tezkor montaj qilish xizmatlari.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Portifolio -->
+			<section id="portfolio" class="portfolio">
+				<h2 class="section-title">Portfolio</h2>
+				<p class="section-subtitle">Ijodiy ishlarim bilan tanishing</p>
+
+				<div class="portfolio-container">
+					<div class="portfolio-item">
+						<img src="./Images/i.webp" alt="portfolio1" />
+						<div class="portfolio-overlay">
+							<h3>Reklama Reels</h3>
+							<p>Mahsulot uchun tayyorlangan ijodiy video kontent.</p>
+							<a href="./Images/i.webp" target="_blank">Ko‘rish</a>
+						</div>
+					</div>
+
+					<div class="portfolio-item">
+						<img src="./Images/i.webp" alt="portfolio2" />
+						<div class="portfolio-overlay">
+							<h3>Tadbir videolari</h3>
+							<p>Seminar va master-klasslar uchun suratga olingan video lavhalar.</p>
+							<a href="./Images/i.webp" target="_blank">Ko‘rish</a>
+						</div>
+					</div>
+
+					<div class="portfolio-item">
+						<img src="./Images/i.webp" alt="portfolio3" />
+						<div class="portfolio-overlay">
+							<h3>Story dizayn</h3>
+							<p>Instagram story uchun original, jozibali videolar.</p>
+							<a href="https://www.instagram.com/p/yourpost3" target="_blank">Ko‘rish</a>
+						</div>
+					</div>
+
+					<div class="portfolio-item">
+						<img src="./Images/i.webp" alt="portfolio4" />
+						<div class="portfolio-overlay">
+							<h3>Fotosuratlar</h3>
+							<p>Brend va shaxsiy portret fotosuratlar.</p>
+							<a href="https://www.instagram.com/p/yourpost4" target="_blank">Ko‘rish</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact" class="contact">
+				<h2 class="section-title">Aloqa</h2>
+				<p class="section-subtitle">
+					Savolingiz bormi yoki hamkorlikni xohlaysizmi? Yozing, siz bilan ishlashdan mamnun bo'laman!
+				</p>
+
+				<div class="contact-container">
+					<form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+						<input type="text" name="name" placeholder="Ismingiz" required />
+						<input type="email" name="email" placeholder="Email manzilingiz" required />
+						<textarea name="message" rows="5" placeholder="Xabaringizni yozing..." required></textarea>
+						<button type="submit" class="btn-submit">Xabar yuborish</button>
+					</form>
+
+					<div class="contact-info">
+						<h3>Kontakt ma'lumotlarim</h3>
+						<p><strong>Email:</strong> nodira.mobilograf@gmail.com</p>
+						<p><strong>Telefon:</strong> +998 90 123 45 67</p>
+						<p><strong>Manzil:</strong> Toshkent shahri, O'zbekiston</p>
+
+						<div class="contact-socials">
+							<a href="https://t.me/nodira_mobilograf" target="_blank" class="social-link">Telegram</a>
+							<a href="https://www.instagram.com/nodira_mobilograf" target="_blank" class="social-link">Instagram</a>
+							<a href="https://www.tiktok.com/@nodira_mobilograf" target="_blank" class="social-link">TikTok</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="footer-container">
+					<div class="footer-left">
+						<div class="footer-logo">
+							<h2><span>Nodira</span> | Mobilograf</h2>
+						</div>
+						<p class="footer-description">
+							Mobilograf sifatida yuqori sifatli fotosuratlar va video ishlanmalarni taqdim etaman. Hayotning har bir
+							lahzasini professional tarzda tasvirlayman.
+						</p>
+					</div>
+					<div class="footer-right">
+						<div class="footer-links">
+							<a href="#home">Bosh sahifa</a>
+							<a href="#services">Xizmatlar</a>
+							<a href="#portfolio">Portfoliyo</a>
+							<a href="#contact">Aloqa</a>
+						</div>
+						<div class="footer-socials">
+							<a href="https://www.instagram.com/nodira_mobilograf" target="_blank">Instagram</a>
+							<a href="https://t.me/nodira_mobilograf" target="_blank">Telegram</a>
+							<a href="https://www.tiktok.com/@nodira_mobilograf" target="_blank">TikTok</a>
+						</div>
+					</div>
+				</div>
+				<p class="footer-text">© 2025 Bekhruz. Barcha huquqlar himoyalangan.</p>
+			</footer>
+		</div>
+
+		<script>
+			let Left_Menu_lis = document.querySelectorAll('.full_menu .Menu_container:nth-child(2) ul li');
+			let Right_Menu_lis = document.querySelectorAll('.full_menu .Menu_container:nth-child(1) ul li');
+			let Left_container = document.querySelector('.full_menu .Menu_container:nth-child(1)');
+			let Right_container = document.querySelector('.full_menu .Menu_container:nth-child(2)');
+			let Right_container_Content = document.querySelector('.full_menu .Menu_container:nth-child(2) .Content');
+			let MenuWrapper = document.querySelector('.full_menu');
+
+			let bars = document.querySelector('.ri-menu-line');
+			let Closebtn = document.querySelector('.ri-close-line');
+			let moon = document.querySelector('.ri-moon-clear-line');
+			bars.addEventListener('click', function () {
+				MenuWrapper.classList.add('activeWrapper');
+				Left_container.classList.add('LeftMenuOpen');
+				Right_container.classList.add('RightMenuOpen');
+				Right_Menu_lis.forEach(li => {
+					li.classList.add('RightContentOpen');
+				});
+				Left_Menu_lis.forEach(li => {
+					li.classList.add('LeftContentOpen');
+				});
+				Right_container_Content.classList.add('menuDescOpen');
+			});
+			Closebtn.addEventListener('click', function () {
+				MenuWrapper.classList.remove('activeWrapper');
+				Left_container.classList.remove('LeftMenuOpen');
+				Right_container.classList.remove('RightMenuOpen');
+				Right_Menu_lis.forEach(li => {
+					li.classList.remove('RightContentOpen');
+				});
+				Left_Menu_lis.forEach(li => {
+					li.classList.remove('LeftContentOpen');
+				});
+				Right_container_Content.classList.add('menuDescOpen');
+			});
+			moon.addEventListener('click', function () {
+				document.body.classList.toggle('activeTheme');
+			});
+		</script>
+	</body>
 </html>
